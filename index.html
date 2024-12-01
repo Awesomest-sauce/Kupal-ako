@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="container border rounded-3 mt-5 p-5">
+      <div class="wrapper">
+       <div class="row">
+          <div class="col-4">
+              <div class="bootstrap-logo" >
+                  <img src="logo.png" al  width="40px"> 
+                  <span class="Weather" id="Weather" > <b> Weather Website </b></span>
+              </div>
+          </div>
+           <div class="col-4">
+            <div class="input-group">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search Place"
+                    aria-label="Search"
+                    aria-describedby="basic-addon2"
+                    height="30px"
+                />
+                <input class="btn btn-outline-secondary" type="submit" id="button-addon2" value="🔍">
+            </div>
+        </div>
+      <div class="col-4">
+          <div class="input-group">
+             <h2> Lambunao, Iloilo </h2>
+             <img src="loc.png" width="30px" height="35px">
+          </div>
+         </div>
+      <div class="row  cel">
+         <div class="col-md-12 mt-5 current-weather">
+            <h1 id="place" class="place"> Cunarom </h1><br>
+            <span class="temperature" id="temperature">32</span>
+            <span class="unit">
+              <a href="#" id="celcius" class="active">°C</a> |
+              <a href="#" id="fahrenheit">°F</a>
+            </span>
+           <span class = "sun" id="sun">
+             <img src="sun.png" alt="sun" class="weather-icon" id="weather-icon " width="60px" height="60px">
+            </span>
+             <h3 id="description" class="description">Most Sunny</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mt-5 time">
+            <h2 id="time" class="time">2:30 PM, Sunday</h2>
+             </div>
+          <div class="col-md-6 mt-5 date text-end">
+            <h2 id="time" class="time">December 1, 2024</h2>
+          </div>
+        </div>
+     <div class="btn border rounded-3 mt-2 p-5">
+    <div class="wrapper">
+    <div class="forecast " id="forecast">
+       <div class="row ">
+           <div class="col-2 text-end">
+            <div class="forecast-day">12/02/24</div>
+          </div>
+            <div class="col-2 text-end">
+             <div class="forecast-day">Monday</div>
+            </div>
+         <div class="col-4 ">
+            <img src="sunny-removebg-preview.png" alt="" width="60">
+        </div>
+           <div class="col-2">
+            <div class="forecast-temp">
+              <span class="fs-6">31 °C</span>
+              <span class="fs-7">87 °F</span>
+           </div>
+         </div>
+       <div class="col-2 ">
+            <div class="wed">Sunny</div>
+          </div>
+      <div class="forecast_b mt-4" id="forecast_b">
+            <div class="row ">
+                <div class="col-2 text-end">
+                 <div class="forecast-day">12/03/24</div>
+               </div>
+                 <div class="col-2 text-end">
+                  <div class="forecast-day">Tuesday</div>
+                 </div>
+              <div class="col-4">
+                 <img src="rainy-removebg-preview.png" alt="" width="60">
+             </div>
+                <div class="col-2">
+                 <div class="forecast-temp">
+                   <span class="fs-6">28 °C</span>
+                   <span class="fs-7">70 °F</span>
+                </div>
+              </div>
+          <div class="col-2">
+            <div class="weather-forecast-day">Rainy</div>
+        </div>
+     </div>
+ <div class="forecast_c mt-4" id="forecast_c">
+     <div class="row ">
+        <div class="col-2 text-end">
+            <div class="forecast-day">12/04/24</div>
+               </div>
+                 <div class="col-2 text-end">
+                   <div class="forecast-day">Wednesday</div>
+                   </div>
+                     <div class="col-4">
+                     <img src="t-storm-removebg-preview.png" alt="" width="60">
+                    </div>
+                <div class="col-2">
+                 <div class="forecast-temp">
+                   <span class="fs-6">27 °C</span>
+                   <span class="fs-7">68 °F</span>
+                </div>
+              </div>
+          <div class="col-2">
+            <div class="weather-forecast-day">T-Storm</div>
+        </div>
+    </div>
+    <div class="forecast_d mt-4" id="forecast_d">
+      <div class="row ">
+         <div class="col-2 text-end">
+             <div class="forecast-day">12/05/24</div>
+                </div>
+                  <div class="col-2 text-end">
+                    <div class="forecast-day">Thursday</div>
+                    </div>
+                      <div class="col-4">
+                      <img src="cloudy.png" alt="" width="60">
+                     </div>
+                 <div class="col-2">
+                  <div class="forecast-temp">
+                    <span class="fs-6">31 °C</span>
+                    <span class="fs-7">78 °F</span>
+                 </div>
+               </div>
+           <div class="col-2">
+             <div class="weather-forecast-day">Cloudy</div>
+         </div>
+     </div>
+     <div class="forecast_d mt-4" id="forecast_d">
+      <div class="row ">
+         <div class="col-2 text-end">
+             <div class="forecast-day">12/06/24</div>
+                </div>
+                  <div class="col-2 text-end">
+                    <div class="forecast-day">Friday</div>
+                    </div>
+                      <div class="col-4">
+                      <img src="sunny-removebg-preview.png" alt="" width="60">
+                     </div>
+                 <div class="col-2">
+                  <div class="forecast-temp">
+                    <span class="fs-6">34 °C</span>
+                    <span class="fs-7">80 °F</span>
+                 </div>
+               </div>
+           <div class="col-2">
+             <div class="weather-forecast-day">Sunny</div>
+             </div>
+             </div>
+         </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p>Coded by: <a href="https://github.com/Awesomest-sauce/Kupal-ako">Shervin Gamao</a></p>
+  
+</div>
+
+    <script src="bootstrap/bootstrap.bundle.js"></script>
+  </body>
+</html>
